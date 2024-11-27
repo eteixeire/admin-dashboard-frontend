@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+body{
+  margin: 0;
+}
+
+@font-face {
+  font-family: rubik;
+  src: url(assets/fonts/Rubik-VariableFont_wght.ttf) format("opentype");
+}
+
+:root{
+  --gray: #4F4F4FC7;
+  --light-gray: #E9E9E9;
+  --blue: #2D70B3;
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

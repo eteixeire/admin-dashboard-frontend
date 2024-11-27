@@ -1,0 +1,18 @@
+<div id="profile">
+
+</div>
+<ul id="sidenav-nav">
+  @for (item of items; track item.name){
+    <li class="sidenav-nav-item">
+      <a class="sidenav-nav-link"
+      [routerLink]="item.route"
+      routerLinkActive = "active"
+      [routerLinkActiveOptions]="{exact : true}">
+        <div class="sidenav-nav-line"></div>
+        <mat-icon class="sidenav-nav-icon">{{item.icon}}</mat-icon>
+        <span class="sidenav-nav-text">{{item.name}}</span>
+      </a>
+
+    </li>
+  }
+</ul>

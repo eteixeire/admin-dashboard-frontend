@@ -21,7 +21,7 @@
   align-items: center;
 }
 
-.sidenav-nav-item:hover {
+.sidenav-nav-item:hover, .active{
   background: var(--light-gray);
 }
 

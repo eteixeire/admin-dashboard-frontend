@@ -2,6 +2,8 @@
 
 body{
   margin: 0;
+  font-family: rubik, sans-serif;
+  color: var(--gray);
 }
 
 @font-face {

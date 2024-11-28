@@ -1,16 +1,24 @@
-<div id="profile">
-
+<div id="sidenav-profile">
+  <!-- TODO: profile from the db-->
+  <img src="assets/images/profile-image.svg" alt="profile image" routerLink="users"/>
+  <div id="sidenav-profile-content">
+    <span id="sidenav-profile-name">John Doe</span>
+    <a class="sidenav-link" routerLink="users">
+      <span id="sidenav-profile-open-text">Open profile</span>
+      <mat-icon id="sidenav-profile-open-icon">launch</mat-icon>
+    </a>
+  </div>
 </div>
 <ul id="sidenav-nav">
   @for (item of items; track item.name){
     <li class="sidenav-nav-item">
-      <a class="sidenav-nav-link"
+      <a class="sidenav-link"
       [routerLink]="item.route"
       routerLinkActive = "active"
       [routerLinkActiveOptions]="{exact : true}">
         <div class="sidenav-nav-line"></div>
         <mat-icon class="sidenav-nav-icon">{{item.icon}}</mat-icon>
-        <span class="sidenav-nav-text">{{item.name}}</span>
+        <span class="sidenav-text">{{item.name}}</span>
       </a>
 
     </li>

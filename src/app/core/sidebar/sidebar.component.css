@@ -1,17 +1,49 @@
-#profile {
+/*--------------------------sidenav-profile--------------------------*/
+#sidenav-profile {
   width: 100%;
   height: 75px;
   margin-top: 40px;
   margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  margin-left: 70px;
 }
+
+#sidenav-profile img {
+  cursor: pointer;
+}
+
+#sidenav-profile-content{
+  height: fit-content;
+  margin-left: 15px;
+}
+
+#sidenav-profile-name {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+#sidenav-profile-content .sidenav-link{
+  width: fit-content;
+}
+
+#sidenav-profile-open-icon{
+  height: 18px;
+  width: 18px;
+  font-size: 18px;
+  padding-left: 3px;
+}
+
+
+/*----------------------------sidenav-nav----------------------------*/
+
 #sidenav-nav {
   width: 100%;
   height: 100%;
   padding-left: 0;
-  font-family: rubik, sans-serif;
   font-size: 1.2em;
   font-weight: 500;
-  color: var(--gray);
+
 }
 
 .sidenav-nav-item {
@@ -25,7 +57,7 @@
   background: var(--light-gray);
 }
 
-.sidenav-nav-link {
+.sidenav-link {
   width: 100%;
   height: 100%;
   text-decoration: none;
@@ -34,7 +66,7 @@
   align-items: center;
 }
 
-.sidenav-nav-text {
+.sidenav-text {
   margin-left: 25px;
 }
 
@@ -46,6 +78,7 @@
 .sidenav-nav-icon{
   height: 25px;
   width: 25px;
+  font-size: 25px;
 }
 
 .active .sidenav-nav-line {
@@ -56,7 +89,7 @@
   animation-duration: 0.25s;
 }
 
-.active  .sidenav-nav-text,
+.active  .sidenav-text,
 .active  .sidenav-nav-icon {
   color: var(--blue);
 }
